@@ -225,7 +225,7 @@ namespace Connections
                                 rxRowEvent.Set();
                             }
 
-                            logger?.LogTrace("I:{cnt} {off}", cntout, offset);
+                           // logger?.LogTrace("I:{cnt} {off}", cntout, offset);
 
                         }
                         catch (Exception e) 

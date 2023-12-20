@@ -172,7 +172,7 @@ namespace Connections //Horizont.Drilling.Connections
                 crcOffset = of;
             }
 
-            if (of > 30000) logger?.LogInformation($"[Old: {crcOldOffset} New: {crcOffset} {of}]");
+            //if (of > 30000) logger?.LogInformation($"[Old: {crcOldOffset} New: {crcOffset} {of}]");
 
             var n = crcOffset - crcOldOffset;
             if (n > 0) _crc = Crc.ComputeCrc(_crc, buf, crcOldOffset, crcOffset - crcOldOffset);
